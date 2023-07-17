@@ -19,8 +19,8 @@ podman push localhost/re_load docker.io/khench/re_load:v0.1
 
 ## Accessing the container
 
-The bundled software can be accessed directly from [dockerhub](https://hub.docker.com/r/khench/re_load) with `podman` (or `docker`, or `singularity`):
+The bundled software can be accessed directly from [dockerhub](https://hub.docker.com/r/khench/re_load) with `apptainer` (or `docker`, or `singularity`):
 
 ```sh
-podman run docker.io/khench/re_load:v0.1 snpeff --help
+apptainer run docker://khench/re_load:v0.1 rohmm --help
 ```
