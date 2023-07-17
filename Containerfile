@@ -30,7 +30,7 @@ RUN mkdir -p /manual_install/bin && \
     git clone https://github.com/kelepiradam/ROHMMCLI.git && \
     cd ROHMMCLI && \
    ./build.sh && \
-   echo -e '#!/usr/bin/env bash'"\njava -jar `pwd`/target/ROHMM-Java8-Full-Jar/ROHMMCLI-1.0.4b-GUI.jar "'${1}' > rohmm && \
+   echo '#!/usr/bin/env bash'"\njava -jar `pwd`/target/ROHMM-Java8-Full-Jar/ROHMMCLI-1.0.4b-GUI.jar "'${1}' > rohmm && \
    chmod 755 rohmm && \
    cd ../bin && \
    ln ../ROHMMCLI/rohmm ./
